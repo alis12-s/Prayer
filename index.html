@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Prayer Times</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕌 Prayer Times</h1>
+            <p class="subtitle">May peace and blessings be upon you</p>
+        </header>
+
+        <div class="date-section" id="dateSection">
+            <div class="date-card">
+                <p class="gregorian-date" id="gregorianDate">Loading...</p>
+                <p class="hijri-date" id="hijriDate">Loading...</p>
+            </div>
+        </div>
+
+        <div class="location-section" id="locationSection">
+            <p class="location-text" id="locationText">📍 Detecting your location...</p>
+        </div>
+
+        <div class="city-input-section" id="cityInputSection" style="display: none;">
+            <p class="input-label">Enter your city name:</p>
+            <div class="input-group">
+                <input type="text" id="cityInput" placeholder="e.g., London, Cairo, Mecca">
+                <button id="citySubmit">Get Prayer Times</button>
+            </div>
+        </div>
+
+        <div class="prayer-times" id="prayerTimes">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading prayer times...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Powered by <a href="https://aladhan.com/" target="_blank">Aladhan API</a></p>
+            <p class="small">Prayer times calculated using Islamic calculation methods</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
